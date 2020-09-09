@@ -24,7 +24,9 @@ export default function App() {
   // The effect should consist of a call to the API using axios.
   // On success, set the array of friend objects from the API into state.
   useEffect(() => {
-    
+    // this is our "side effect" our random code we want to write
+    // this will happen AFTER DOM surgery
+    axios.get(`${BASE_URL}/friends`)
   }, [])
 
   const Friend = ({ info }) => { // { info } is the props object we expect
