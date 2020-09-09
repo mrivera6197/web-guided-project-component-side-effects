@@ -33,7 +33,7 @@ export default function App() {
       .catch(err => {
         debugger
       })
-  }, [])
+  }, []) // empty array means, run this code after FIRST DOM surgery only
 
   const Friend = ({ info }) => { // { info } is the props object we expect
     // const info = props.info
