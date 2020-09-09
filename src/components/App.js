@@ -23,7 +23,9 @@ export default function App() {
   // caused by the first render only. You'll need `useEffect` from React.
   // The effect should consist of a call to the API using axios.
   // On success, set the array of friend objects from the API into state.
-  useEffect(() => { }, [])
+  useEffect(() => {
+    
+  }, [])
 
   const Friend = ({ info }) => { // { info } is the props object we expect
     // const info = props.info
