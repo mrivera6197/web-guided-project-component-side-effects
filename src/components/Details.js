@@ -45,7 +45,13 @@ export default function Details(props) {
   // The URL should end up looking like `http://localhost:4000/friends/1?api_key=xyz`
   // On success, shove the details of the friend in `details` slice of state
   useEffect(() => {
-    axios.get()
+    axios.get(`${BASE_URL}/friends/${friendId}?api_key=${API_KEY}`)
+      .then(res => {
+        debugger
+      })
+      .catch(err => {
+        debugger
+      })
   }, [])
 
   console.log('component RENDERS')
