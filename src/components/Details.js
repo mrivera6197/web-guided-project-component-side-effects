@@ -11,7 +11,7 @@ export default function Details(props) {
     console.log('🥇 EFFECT after FIRST DOM surgery') // sometimes this is dirty
 
     return () => {
-      console.log('🥇 CLEANUP after effect after FIRST DOM surgery')
+      console.log('🥇 CLEANUP after effect right before component gets unmounted')
     }
   }, [])
 
