@@ -32,6 +32,9 @@ export default function Details(props) {
   useEffect(() => {
     console.log('🥵 EFFECT after EVERY DOM surgery')
 
+    // if you intend to change state here, make sure to do it 
+    // conditionally, otherwise INFINITE LOOP!!!
+
     return () => {
       console.log('🥵 CLEANUP of previous effect, before running the next one')
     }
