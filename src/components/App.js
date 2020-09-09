@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 // TASK 1 - import the axios lib from node_modules
 import axios from 'axios'
 
