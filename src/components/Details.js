@@ -22,6 +22,10 @@ export default function Details(props) {
   useEffect(() => {
     const dirtyListener = event => console.log(`Random num: ${Math.random()}`)
     document.addEventListener('click', dirtyListener)
+
+    return () => {
+      document.removeEventListener()
+    }
   }, [])
 
   // TASK 6 - Create a side effect 🥵 that runs after every render.
