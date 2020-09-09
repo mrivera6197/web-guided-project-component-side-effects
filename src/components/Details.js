@@ -44,6 +44,7 @@ export default function Details(props) {
   // Whenever props.friendId updates we should trigger a fetch for details of the friend.
   // The URL should end up looking like `http://localhost:4000/friends/1?api_key=xyz`
   // On success, shove the details of the friend in `details` slice of state
+  useEffect(() => { }, [])
 
   console.log('component RENDERS')
 
