@@ -22,9 +22,11 @@ export default function App() {
   // The effect should consist of a call to the API using axios.
   // On success, set the array of friend objects from the API into state.
 
-  const Friend = ({ info }) => { // { info } is the props object we expect, with a single info prop
+  const Friend = ({ info, foo, bar }) => { // { info } is the props object we expect, with a single info prop
     // const info = props.info
-    // const { info } = props
+    // const foo = props.foo
+    // const bar = props.bar
+    // const { info, foo, bar, baz } = props
     return (
       <div className='friend'>
         {info.name}
