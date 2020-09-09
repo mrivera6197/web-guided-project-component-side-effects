@@ -47,7 +47,7 @@ export default function Details(props) {
   useEffect(() => {
     axios.get(`${BASE_URL}/friends/${friendId}?api_key=${API_KEY}`)
       .then(res => {
-        setDetails()
+        setDetails(res.data)
       })
       .catch(err => {
         debugger
