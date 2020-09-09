@@ -52,7 +52,7 @@ export default function Details(props) {
       .catch(err => {
         debugger
       })
-  }, [])
+  }, [friendId]) // if ANY element inside the array changes, the effect runs again
 
   console.log('component RENDERS')
 
