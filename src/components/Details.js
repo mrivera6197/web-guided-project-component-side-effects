@@ -7,6 +7,7 @@ export default function Details(props) {
   const [details, setDetails] = useState(null)
 
   // TASK 4 - Create a side effect 🥇 that runs only after first render.
+  useEffect
 
   // TASK 5 - Create a side effect 👻 that runs only after first render
   // and puts a 'click' event handler on document.
