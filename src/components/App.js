@@ -23,7 +23,8 @@ export default function App() {
   // On success, set the array of friend objects from the API into state.
 
   const Friend = (props) => {
-    const info = props.info
+    // const info = props.info
+    const { info } = props
     return (
       <div className='friend'>
         {info.name}
