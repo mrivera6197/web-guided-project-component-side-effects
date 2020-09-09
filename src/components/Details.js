@@ -45,7 +45,7 @@ export default function Details(props) {
   // The URL should end up looking like `http://localhost:4000/friends/1?api_key=xyz`
   // On success, shove the details of the friend in `details` slice of state
 
-  
+  console.log('component RENDERS')
 
   return (
     <div className='container'>
