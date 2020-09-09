@@ -22,14 +22,17 @@ export default function App() {
   // The effect should consist of a call to the API using axios.
   // On success, set the array of friend objects from the API into state.
 
-  const Friend = ({ info }) => (
-    <div className='friend'>
-      {info.name}
-      <button onClick={() => openDetails(info.id)}>
-        See details
-      </button>
-    </div>
-  )
+  const Friend = (props) => {
+    const info = props.info
+    return (
+      <div className='friend'>
+        {info.name}
+        <button onClick={() => openDetails(info.id)}>
+          See details
+        </button>
+      </div>
+    )
+  }
 
   return (
     <div className='container'>
