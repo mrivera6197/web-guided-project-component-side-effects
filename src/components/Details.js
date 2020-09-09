@@ -24,7 +24,7 @@ export default function Details(props) {
     document.addEventListener('click', dirtyListener)
 
     return () => {
-      document.removeEventListener()
+      document.removeEventListener('click', dirtyListener)
     }
   }, [])
 
