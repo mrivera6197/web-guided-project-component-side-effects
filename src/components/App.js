@@ -28,7 +28,7 @@ export default function App() {
     // this will happen AFTER DOM surgery
     axios.get(`${BASE_URL}/friends?api_key=${API_KEY}`)
       .then(res => {
-        debugger
+        setFriends(res.data)
       })
       .catch(err => {
         debugger
