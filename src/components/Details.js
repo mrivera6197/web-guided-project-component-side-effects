@@ -11,6 +11,7 @@ export default function Details(props) {
     console.log('🥇 EFFECT after FIRST DOM surgery') // sometimes this is dirty
 
     return () => {
+      // cleanup for the effect above
       console.log('🥇 CLEANUP after effect right before component gets unmounted')
     }
   }, [])
@@ -18,6 +19,7 @@ export default function Details(props) {
   // TASK 5 - Create a side effect 👻 that runs only after first render
   // and puts a 'click' event handler on document.
   // See what happens if we don't clean up.
+  useEffect()
 
   // TASK 6 - Create a side effect 🥵 that runs after every render.
 
