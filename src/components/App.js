@@ -27,6 +27,12 @@ export default function App() {
     // this is our "side effect" our random code we want to write
     // this will happen AFTER DOM surgery
     axios.get(`${BASE_URL}/friends?api_key=${API_KEY}`)
+      .then(res => {
+        debugger
+      })
+      .catch(err => {
+        debugger
+      })
   }, [])
 
   const Friend = ({ info }) => { // { info } is the props object we expect
