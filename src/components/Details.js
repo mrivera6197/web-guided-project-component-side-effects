@@ -12,7 +12,7 @@ export default function Details(props) {
 
     return () => {
       // cleanup for the effect above
-      console.log('🥇 CLEANUP after effect right before component gets unmounted')
+      console.log('🥇 CLEANUP after effect from first surgery, at the time of unmount')
     }
   }, [])
 
